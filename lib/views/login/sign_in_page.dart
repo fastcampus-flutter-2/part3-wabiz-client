@@ -54,6 +54,7 @@ class _SignInPageState extends State<SignInPage> {
                   Gap(20),
                   TextFormField(
                     controller: passwordTextController,
+                    obscureText: true,
                     decoration: InputDecoration(
                       hintText: "비밀번호 입력",
                     ),

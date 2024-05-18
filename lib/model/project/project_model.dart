@@ -28,7 +28,6 @@ class ProjectItemModel with _$ProjectItemModel {
     String? owner,
     int? price,
     String? thumbnail,
-    String? count,
     String? deadline,
     String? description,
     int? waitlistCount,

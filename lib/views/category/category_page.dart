@@ -163,6 +163,7 @@ class _CategoryPageState extends ConsumerState<CategoryPage> {
                             padding: const EdgeInsets.only(left: 32),
                             child: IntrinsicWidth(
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   const Gap(8),
                                   SvgPicture.asset(

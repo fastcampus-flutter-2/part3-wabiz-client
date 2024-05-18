@@ -1,6 +1,8 @@
+import 'package:dio/dio.dart';
 import 'package:fastcapmus_wabiz_client/model/home/home_model.dart';
 import 'package:fastcapmus_wabiz_client/repository/home/home_repository.dart';
 import 'package:fastcapmus_wabiz_client/shared/model/category.dart';
+import 'package:fastcapmus_wabiz_client/views/home/home_page.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -42,7 +44,15 @@ Future<HomeModel> fetchHomeProject(FetchHomeProjectRef ref) async {
     final result =
         await ref.watch(homeViewModelProvider.notifier).fetchHomeData();
     return result ?? HomeModel();
-  } catch (e) {
+  } on DioException catch (error) {
+    switch (error.type) {
+      case DioExceptionType.connectionError:
+        throw ConnectionError(error);
+      case DioExceptionType.connectionTimeout:
+        throw ConnectionTimeoutError(error);
+        rethrow;
+      default:
+    }
     return HomeModel();
   }
 }
