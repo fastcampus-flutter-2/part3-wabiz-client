@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:fastcapmus_wabiz_client/model/home/home_model.dart';
+import 'package:fastcapmus_wabiz_client/data/model/home/home_model.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'home_api.g.dart';

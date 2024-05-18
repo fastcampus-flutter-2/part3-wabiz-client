@@ -22,8 +22,6 @@ dependencies:
   image_picker: ^1.1.1
   dotted_border: ^2.1.0
   shared_preferences: ^2.2.3
-#  freezed: ^3.0.0-0.0.dev
-
 
 dependency_overrides:
   meta:
