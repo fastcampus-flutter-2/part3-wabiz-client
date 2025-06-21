@@ -58,10 +58,11 @@ class _AddRewardPageState extends State<AddRewardPage> {
               ),
               const Gap(12),
               DottedBorder(
-                color: AppColors.wabizGray[200]!,
-                dashPattern: [5, 5],
-                borderType: BorderType.RRect,
-                radius: const Radius.circular(10),
+                options: RoundedRectDottedBorderOptions(
+                  color: AppColors.wabizGray[200]!,
+                  dashPattern: [5, 5],
+                  radius: const Radius.circular(10),
+                ),
                 child: Container(
                   height: 216,
                   width: double.infinity,
