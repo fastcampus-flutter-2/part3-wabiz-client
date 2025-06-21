@@ -7,6 +7,8 @@ A fastcapmus_wabiz_client Flutter project.
 ## 1. Flutter 3.32 버전에 대한 마이그레이션
 - 2025년 6월 기준 stable 채널에 대한 마이그레이션 작업 진행합니다.
 - theme.dart 파일의 DialogTheme 변경:  DialogThemeData으로 변경되었습니다.
+- android, ios 폴더 최신화 : stable(3.32) 버전에서 빌드 가능하도록 변경했습니다.
+  - android의 경우 kts  
 
 ## 2. 패키지 업데이트
 
