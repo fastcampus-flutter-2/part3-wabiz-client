@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 final ThemeData wabizDefaultTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   fontFamily: "Pretendard",
-  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
     backgroundColor: Colors.white,
     type: BottomNavigationBarType.fixed,
     selectedItemColor: Colors.black,
     unselectedItemColor: Colors.grey,
   ),
   primaryColor: AppColors.primary,
-  appBarTheme: AppBarTheme(
+  appBarTheme: const AppBarTheme(
     backgroundColor: Colors.white,
     foregroundColor: Colors.black,
     surfaceTintColor: Colors.white,
@@ -24,33 +24,33 @@ final ThemeData wabizDefaultTheme = ThemeData(
         color: AppColors.wabizGray[200]!,
       ),
       foregroundColor: Colors.black,
-      textStyle: TextStyle(
+      textStyle: const TextStyle(
         fontSize: 16,
       ),
-      minimumSize: Size(64, 50),
+      minimumSize: const Size(64, 50),
     ),
   ),
   inputDecorationTheme: InputDecorationTheme(
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(
+      borderSide: const BorderSide(
         color: Color(0xffd4d4d4),
         width: 1.0,
       ),
     ),
-    outlineBorder: BorderSide(
+    outlineBorder: const BorderSide(
       color: AppColors.primary,
     ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(
+      borderSide: const BorderSide(
         color: AppColors.primary,
         width: 1.0,
       ),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(
+      borderSide: const BorderSide(
         color: AppColors.primary,
         width: 1.0,
       ),
@@ -61,7 +61,7 @@ final ThemeData wabizDefaultTheme = ThemeData(
       fontWeight: FontWeight.w500,
     ),
   ),
-  dialogTheme: DialogTheme(
+  dialogTheme: DialogThemeData(
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(8),
     ),
