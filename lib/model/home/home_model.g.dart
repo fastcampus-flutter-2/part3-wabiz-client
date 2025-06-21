@@ -6,8 +6,7 @@ part of 'home_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$HomeModelImpl _$$HomeModelImplFromJson(Map<String, dynamic> json) =>
-    _$HomeModelImpl(
+_HomeModel _$HomeModelFromJson(Map<String, dynamic> json) => _HomeModel(
       status: json['status'] as String?,
       totalCount: (json['total_count'] as num?)?.toInt(),
       projects: (json['projects'] as List<dynamic>?)
@@ -16,15 +15,15 @@ _$HomeModelImpl _$$HomeModelImplFromJson(Map<String, dynamic> json) =>
           const [],
     );
 
-Map<String, dynamic> _$$HomeModelImplToJson(_$HomeModelImpl instance) =>
+Map<String, dynamic> _$HomeModelToJson(_HomeModel instance) =>
     <String, dynamic>{
       'status': instance.status,
       'total_count': instance.totalCount,
       'projects': instance.projects,
     };
 
-_$HomeItemModelImpl _$$HomeItemModelImplFromJson(Map<String, dynamic> json) =>
-    _$HomeItemModelImpl(
+_HomeItemModel _$HomeItemModelFromJson(Map<String, dynamic> json) =>
+    _HomeItemModel(
       id: (json['id'] as num?)?.toInt(),
       categoryId: (json['category_id'] as num?)?.toInt(),
       projectTypeId: (json['project_type_id'] as num?)?.toInt(),
@@ -43,7 +42,7 @@ _$HomeItemModelImpl _$$HomeItemModelImplFromJson(Map<String, dynamic> json) =>
       type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$HomeItemModelImplToJson(_$HomeItemModelImpl instance) =>
+Map<String, dynamic> _$HomeItemModelToJson(_HomeItemModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'category_id': instance.categoryId,

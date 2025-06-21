@@ -5,7 +5,7 @@ part 'project_model.g.dart';
 part 'project_model.freezed.dart';
 
 @freezed
-class ProjectModel with _$ProjectModel {
+abstract class ProjectModel with _$ProjectModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory ProjectModel({
     @Default([]) List<ProjectItemModel> data,
@@ -16,7 +16,7 @@ class ProjectModel with _$ProjectModel {
 }
 
 @freezed
-class ProjectItemModel with _$ProjectItemModel {
+abstract class ProjectItemModel with _$ProjectItemModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory ProjectItemModel({
     int? id,

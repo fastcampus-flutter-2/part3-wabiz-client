@@ -11,7 +11,7 @@ part 'home_view_model.g.dart';
 part 'home_view_model.freezed.dart';
 
 @freezed
-class HomeState with _$HomeState {
+abstract class HomeState with _$HomeState {
   factory HomeState({@Default([]) List<HomeItemModel> projects}) = _HomeState;
 }
 

@@ -5,7 +5,7 @@ part 'login_model.g.dart';
 part 'login_model.freezed.dart';
 
 @freezed
-class LoginModel with _$LoginModel {
+abstract class LoginModel with _$LoginModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory LoginModel({
     int? id,

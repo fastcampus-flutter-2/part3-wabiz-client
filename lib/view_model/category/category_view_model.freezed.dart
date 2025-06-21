@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,30 +10,53 @@ part of 'category_view_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CategoryScreenState {
-  ProjectType? get selectedType => throw _privateConstructorUsedError;
-  EnumCategoryProjectType? get projectFilter =>
-      throw _privateConstructorUsedError;
-  List<CategoryItemModel> get projects => throw _privateConstructorUsedError;
-  AsyncValue<List<CategoryItemModel>> get projectState =>
-      throw _privateConstructorUsedError;
+  ProjectType? get selectedType;
+  EnumCategoryProjectType? get projectFilter;
+  List<CategoryItemModel> get projects;
+  AsyncValue<List<CategoryItemModel>> get projectState;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CategoryScreenState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $CategoryScreenStateCopyWith<CategoryScreenState> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$CategoryScreenStateCopyWithImpl<CategoryScreenState>(
+          this as CategoryScreenState, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is CategoryScreenState &&
+            (identical(other.selectedType, selectedType) ||
+                other.selectedType == selectedType) &&
+            (identical(other.projectFilter, projectFilter) ||
+                other.projectFilter == projectFilter) &&
+            const DeepCollectionEquality().equals(other.projects, projects) &&
+            (identical(other.projectState, projectState) ||
+                other.projectState == projectState));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, selectedType, projectFilter,
+      const DeepCollectionEquality().hash(projects), projectState);
+
+  @override
+  String toString() {
+    return 'CategoryScreenState(selectedType: $selectedType, projectFilter: $projectFilter, projects: $projects, projectState: $projectState)';
+  }
 }
 
 /// @nodoc
-abstract class $CategoryScreenStateCopyWith<$Res> {
+abstract mixin class $CategoryScreenStateCopyWith<$Res> {
   factory $CategoryScreenStateCopyWith(
-          CategoryScreenState value, $Res Function(CategoryScreenState) then) =
-      _$CategoryScreenStateCopyWithImpl<$Res, CategoryScreenState>;
+          CategoryScreenState value, $Res Function(CategoryScreenState) _then) =
+      _$CategoryScreenStateCopyWithImpl;
   @useResult
   $Res call(
       {ProjectType? selectedType,
@@ -44,15 +68,15 @@ abstract class $CategoryScreenStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CategoryScreenStateCopyWithImpl<$Res, $Val extends CategoryScreenState>
+class _$CategoryScreenStateCopyWithImpl<$Res>
     implements $CategoryScreenStateCopyWith<$Res> {
-  _$CategoryScreenStateCopyWithImpl(this._value, this._then);
+  _$CategoryScreenStateCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final CategoryScreenState _self;
+  final $Res Function(CategoryScreenState) _then;
 
+  /// Create a copy of CategoryScreenState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -61,98 +85,45 @@ class _$CategoryScreenStateCopyWithImpl<$Res, $Val extends CategoryScreenState>
     Object? projects = null,
     Object? projectState = null,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       selectedType: freezed == selectedType
-          ? _value.selectedType
+          ? _self.selectedType
           : selectedType // ignore: cast_nullable_to_non_nullable
               as ProjectType?,
       projectFilter: freezed == projectFilter
-          ? _value.projectFilter
+          ? _self.projectFilter
           : projectFilter // ignore: cast_nullable_to_non_nullable
               as EnumCategoryProjectType?,
       projects: null == projects
-          ? _value.projects
+          ? _self.projects
           : projects // ignore: cast_nullable_to_non_nullable
               as List<CategoryItemModel>,
       projectState: null == projectState
-          ? _value.projectState
+          ? _self.projectState
           : projectState // ignore: cast_nullable_to_non_nullable
               as AsyncValue<List<CategoryItemModel>>,
-    ) as $Val);
+    ));
   }
 
+  /// Create a copy of CategoryScreenState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ProjectTypeCopyWith<$Res>? get selectedType {
-    if (_value.selectedType == null) {
+    if (_self.selectedType == null) {
       return null;
     }
 
-    return $ProjectTypeCopyWith<$Res>(_value.selectedType!, (value) {
-      return _then(_value.copyWith(selectedType: value) as $Val);
+    return $ProjectTypeCopyWith<$Res>(_self.selectedType!, (value) {
+      return _then(_self.copyWith(selectedType: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$CategoryScreenStateImplCopyWith<$Res>
-    implements $CategoryScreenStateCopyWith<$Res> {
-  factory _$$CategoryScreenStateImplCopyWith(_$CategoryScreenStateImpl value,
-          $Res Function(_$CategoryScreenStateImpl) then) =
-      __$$CategoryScreenStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {ProjectType? selectedType,
-      EnumCategoryProjectType? projectFilter,
-      List<CategoryItemModel> projects,
-      AsyncValue<List<CategoryItemModel>> projectState});
 
-  @override
-  $ProjectTypeCopyWith<$Res>? get selectedType;
-}
-
-/// @nodoc
-class __$$CategoryScreenStateImplCopyWithImpl<$Res>
-    extends _$CategoryScreenStateCopyWithImpl<$Res, _$CategoryScreenStateImpl>
-    implements _$$CategoryScreenStateImplCopyWith<$Res> {
-  __$$CategoryScreenStateImplCopyWithImpl(_$CategoryScreenStateImpl _value,
-      $Res Function(_$CategoryScreenStateImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? selectedType = freezed,
-    Object? projectFilter = freezed,
-    Object? projects = null,
-    Object? projectState = null,
-  }) {
-    return _then(_$CategoryScreenStateImpl(
-      selectedType: freezed == selectedType
-          ? _value.selectedType
-          : selectedType // ignore: cast_nullable_to_non_nullable
-              as ProjectType?,
-      projectFilter: freezed == projectFilter
-          ? _value.projectFilter
-          : projectFilter // ignore: cast_nullable_to_non_nullable
-              as EnumCategoryProjectType?,
-      projects: null == projects
-          ? _value._projects
-          : projects // ignore: cast_nullable_to_non_nullable
-              as List<CategoryItemModel>,
-      projectState: null == projectState
-          ? _value.projectState
-          : projectState // ignore: cast_nullable_to_non_nullable
-              as AsyncValue<List<CategoryItemModel>>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$CategoryScreenStateImpl implements _CategoryScreenState {
-  _$CategoryScreenStateImpl(
+class _CategoryScreenState implements CategoryScreenState {
+  _CategoryScreenState(
       {this.selectedType,
       this.projectFilter = EnumCategoryProjectType.recommend,
       final List<CategoryItemModel> projects = const [],
@@ -177,16 +148,20 @@ class _$CategoryScreenStateImpl implements _CategoryScreenState {
   @JsonKey()
   final AsyncValue<List<CategoryItemModel>> projectState;
 
+  /// Create a copy of CategoryScreenState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'CategoryScreenState(selectedType: $selectedType, projectFilter: $projectFilter, projects: $projects, projectState: $projectState)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$CategoryScreenStateCopyWith<_CategoryScreenState> get copyWith =>
+      __$CategoryScreenStateCopyWithImpl<_CategoryScreenState>(
+          this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CategoryScreenStateImpl &&
+            other is _CategoryScreenState &&
             (identical(other.selectedType, selectedType) ||
                 other.selectedType == selectedType) &&
             (identical(other.projectFilter, projectFilter) ||
@@ -200,32 +175,81 @@ class _$CategoryScreenStateImpl implements _CategoryScreenState {
   int get hashCode => Object.hash(runtimeType, selectedType, projectFilter,
       const DeepCollectionEquality().hash(_projects), projectState);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'CategoryScreenState(selectedType: $selectedType, projectFilter: $projectFilter, projects: $projects, projectState: $projectState)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$CategoryScreenStateCopyWith<$Res>
+    implements $CategoryScreenStateCopyWith<$Res> {
+  factory _$CategoryScreenStateCopyWith(_CategoryScreenState value,
+          $Res Function(_CategoryScreenState) _then) =
+      __$CategoryScreenStateCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ProjectType? selectedType,
+      EnumCategoryProjectType? projectFilter,
+      List<CategoryItemModel> projects,
+      AsyncValue<List<CategoryItemModel>> projectState});
+
+  @override
+  $ProjectTypeCopyWith<$Res>? get selectedType;
+}
+
+/// @nodoc
+class __$CategoryScreenStateCopyWithImpl<$Res>
+    implements _$CategoryScreenStateCopyWith<$Res> {
+  __$CategoryScreenStateCopyWithImpl(this._self, this._then);
+
+  final _CategoryScreenState _self;
+  final $Res Function(_CategoryScreenState) _then;
+
+  /// Create a copy of CategoryScreenState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$CategoryScreenStateImplCopyWith<_$CategoryScreenStateImpl> get copyWith =>
-      __$$CategoryScreenStateImplCopyWithImpl<_$CategoryScreenStateImpl>(
-          this, _$identity);
+  $Res call({
+    Object? selectedType = freezed,
+    Object? projectFilter = freezed,
+    Object? projects = null,
+    Object? projectState = null,
+  }) {
+    return _then(_CategoryScreenState(
+      selectedType: freezed == selectedType
+          ? _self.selectedType
+          : selectedType // ignore: cast_nullable_to_non_nullable
+              as ProjectType?,
+      projectFilter: freezed == projectFilter
+          ? _self.projectFilter
+          : projectFilter // ignore: cast_nullable_to_non_nullable
+              as EnumCategoryProjectType?,
+      projects: null == projects
+          ? _self._projects
+          : projects // ignore: cast_nullable_to_non_nullable
+              as List<CategoryItemModel>,
+      projectState: null == projectState
+          ? _self.projectState
+          : projectState // ignore: cast_nullable_to_non_nullable
+              as AsyncValue<List<CategoryItemModel>>,
+    ));
+  }
+
+  /// Create a copy of CategoryScreenState
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $ProjectTypeCopyWith<$Res>? get selectedType {
+    if (_self.selectedType == null) {
+      return null;
+    }
+
+    return $ProjectTypeCopyWith<$Res>(_self.selectedType!, (value) {
+      return _then(_self.copyWith(selectedType: value));
+    });
+  }
 }
 
-abstract class _CategoryScreenState implements CategoryScreenState {
-  factory _CategoryScreenState(
-          {final ProjectType? selectedType,
-          final EnumCategoryProjectType? projectFilter,
-          final List<CategoryItemModel> projects,
-          final AsyncValue<List<CategoryItemModel>> projectState}) =
-      _$CategoryScreenStateImpl;
-
-  @override
-  ProjectType? get selectedType;
-  @override
-  EnumCategoryProjectType? get projectFilter;
-  @override
-  List<CategoryItemModel> get projects;
-  @override
-  AsyncValue<List<CategoryItemModel>> get projectState;
-  @override
-  @JsonKey(ignore: true)
-  _$$CategoryScreenStateImplCopyWith<_$CategoryScreenStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

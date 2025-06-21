@@ -6,9 +6,8 @@ part of 'reward_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$RewardItemModelImpl _$$RewardItemModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$RewardItemModelImpl(
+_RewardItemModel _$RewardItemModelFromJson(Map<String, dynamic> json) =>
+    _RewardItemModel(
       id: (json['id'] as num?)?.toInt(),
       projectId: (json['projectId'] as num?)?.toInt(),
       imageUrl: json['imageUrl'] as String?,
@@ -21,8 +20,7 @@ _$RewardItemModelImpl _$$RewardItemModelImplFromJson(
           const [],
     );
 
-Map<String, dynamic> _$$RewardItemModelImplToJson(
-        _$RewardItemModelImpl instance) =>
+Map<String, dynamic> _$RewardItemModelToJson(_RewardItemModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'projectId': instance.projectId,

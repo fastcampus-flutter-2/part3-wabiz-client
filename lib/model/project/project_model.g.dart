@@ -6,22 +6,21 @@ part of 'project_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ProjectModelImpl _$$ProjectModelImplFromJson(Map<String, dynamic> json) =>
-    _$ProjectModelImpl(
+_ProjectModel _$ProjectModelFromJson(Map<String, dynamic> json) =>
+    _ProjectModel(
       data: (json['data'] as List<dynamic>?)
               ?.map((e) => ProjectItemModel.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$$ProjectModelImplToJson(_$ProjectModelImpl instance) =>
+Map<String, dynamic> _$ProjectModelToJson(_ProjectModel instance) =>
     <String, dynamic>{
       'data': instance.data,
     };
 
-_$ProjectItemModelImpl _$$ProjectItemModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$ProjectItemModelImpl(
+_ProjectItemModel _$ProjectItemModelFromJson(Map<String, dynamic> json) =>
+    _ProjectItemModel(
       id: (json['id'] as num?)?.toInt(),
       categoryId: (json['category_id'] as num?)?.toInt(),
       projectTypeId: (json['project_type_id'] as num?)?.toInt(),
@@ -49,8 +48,7 @@ _$ProjectItemModelImpl _$$ProjectItemModelImplFromJson(
           const [],
     );
 
-Map<String, dynamic> _$$ProjectItemModelImplToJson(
-        _$ProjectItemModelImpl instance) =>
+Map<String, dynamic> _$ProjectItemModelToJson(_ProjectItemModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'category_id': instance.categoryId,

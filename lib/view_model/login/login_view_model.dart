@@ -12,7 +12,7 @@ part 'login_view_model.g.dart';
 part 'login_view_model.freezed.dart';
 
 @freezed
-class LoginState with _$LoginState {
+abstract class LoginState with _$LoginState {
   factory LoginState({
     @Default(false) bool isLogin,
     int? userid,

@@ -20,6 +20,8 @@ final fetchHomeProjectProvider = AutoDisposeFutureProvider<HomeModel>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef FetchHomeProjectRef = AutoDisposeFutureProviderRef<HomeModel>;
 String _$fetchHomeCategoriesHash() =>
     r'8a6b0eb74de46d2ab2d5da63f317030dcfd06fc2';
@@ -37,6 +39,8 @@ final fetchHomeCategoriesProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef FetchHomeCategoriesRef
     = AutoDisposeFutureProviderRef<List<ProjectCategory>>;
 String _$homeViewModelHash() => r'dcb3daba5fdd4af188142f6e4dc7467f1e92a72d';
@@ -56,4 +60,4 @@ final homeViewModelProvider =
 
 typedef _$HomeViewModel = AutoDisposeNotifier<HomeState?>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

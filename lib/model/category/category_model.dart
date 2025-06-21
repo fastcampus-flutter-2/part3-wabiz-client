@@ -5,7 +5,7 @@ part 'category_model.g.dart';
 part 'category_model.freezed.dart';
 
 @freezed
-class CategoryModel with _$CategoryModel {
+abstract class CategoryModel with _$CategoryModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory CategoryModel({
     String? status,
@@ -18,7 +18,7 @@ class CategoryModel with _$CategoryModel {
 }
 
 @freezed
-class CategoryItemModel with _$CategoryItemModel {
+abstract class CategoryItemModel with _$CategoryItemModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory CategoryItemModel({
     int? id,

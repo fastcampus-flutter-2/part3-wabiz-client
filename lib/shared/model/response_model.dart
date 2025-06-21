@@ -4,7 +4,7 @@ part 'response_model.g.dart';
 part 'response_model.freezed.dart';
 
 @freezed
-class ResponseModel with _$ResponseModel {
+abstract class ResponseModel with _$ResponseModel {
   const factory ResponseModel({
     @JsonKey(name: "status") String? status,
     @JsonKey(name: "msg") String? msg,

@@ -11,7 +11,7 @@ part 'my_view_model.g.dart';
 part 'my_view_model.freezed.dart';
 
 @freezed
-class MyPageState with _$MyPageState {
+abstract class MyPageState with _$MyPageState {
   factory MyPageState({
     bool? loginState,
     LoginModel? loginModel,

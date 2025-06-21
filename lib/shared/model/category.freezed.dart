@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,94 +10,58 @@ part of 'category.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-ProjectCategory _$ProjectCategoryFromJson(Map<String, dynamic> json) {
-  return _ProjectCategory.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ProjectCategory {
-  int? get id => throw _privateConstructorUsedError;
-  String? get category => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  String? get iconPath => throw _privateConstructorUsedError;
-  String? get created => throw _privateConstructorUsedError;
+  int? get id;
+  String? get category;
+  String? get title;
+  String? get iconPath;
+  String? get created;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ProjectCategoryCopyWith<ProjectCategory> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ProjectCategoryCopyWith<$Res> {
-  factory $ProjectCategoryCopyWith(
-          ProjectCategory value, $Res Function(ProjectCategory) then) =
-      _$ProjectCategoryCopyWithImpl<$Res, ProjectCategory>;
-  @useResult
-  $Res call(
-      {int? id,
-      String? category,
-      String? title,
-      String? iconPath,
-      String? created});
-}
-
-/// @nodoc
-class _$ProjectCategoryCopyWithImpl<$Res, $Val extends ProjectCategory>
-    implements $ProjectCategoryCopyWith<$Res> {
-  _$ProjectCategoryCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of ProjectCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ProjectCategoryCopyWith<ProjectCategory> get copyWith =>
+      _$ProjectCategoryCopyWithImpl<ProjectCategory>(
+          this as ProjectCategory, _$identity);
+
+  /// Serializes this ProjectCategory to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? id = freezed,
-    Object? category = freezed,
-    Object? title = freezed,
-    Object? iconPath = freezed,
-    Object? created = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      category: freezed == category
-          ? _value.category
-          : category // ignore: cast_nullable_to_non_nullable
-              as String?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      iconPath: freezed == iconPath
-          ? _value.iconPath
-          : iconPath // ignore: cast_nullable_to_non_nullable
-              as String?,
-      created: freezed == created
-          ? _value.created
-          : created // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ProjectCategory &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.category, category) ||
+                other.category == category) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.iconPath, iconPath) ||
+                other.iconPath == iconPath) &&
+            (identical(other.created, created) || other.created == created));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, id, category, title, iconPath, created);
+
+  @override
+  String toString() {
+    return 'ProjectCategory(id: $id, category: $category, title: $title, iconPath: $iconPath, created: $created)';
   }
 }
 
 /// @nodoc
-abstract class _$$ProjectCategoryImplCopyWith<$Res>
-    implements $ProjectCategoryCopyWith<$Res> {
-  factory _$$ProjectCategoryImplCopyWith(_$ProjectCategoryImpl value,
-          $Res Function(_$ProjectCategoryImpl) then) =
-      __$$ProjectCategoryImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ProjectCategoryCopyWith<$Res> {
+  factory $ProjectCategoryCopyWith(
+          ProjectCategory value, $Res Function(ProjectCategory) _then) =
+      _$ProjectCategoryCopyWithImpl;
   @useResult
   $Res call(
       {int? id,
@@ -107,13 +72,15 @@ abstract class _$$ProjectCategoryImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ProjectCategoryImplCopyWithImpl<$Res>
-    extends _$ProjectCategoryCopyWithImpl<$Res, _$ProjectCategoryImpl>
-    implements _$$ProjectCategoryImplCopyWith<$Res> {
-  __$$ProjectCategoryImplCopyWithImpl(
-      _$ProjectCategoryImpl _value, $Res Function(_$ProjectCategoryImpl) _then)
-      : super(_value, _then);
+class _$ProjectCategoryCopyWithImpl<$Res>
+    implements $ProjectCategoryCopyWith<$Res> {
+  _$ProjectCategoryCopyWithImpl(this._self, this._then);
 
+  final ProjectCategory _self;
+  final $Res Function(ProjectCategory) _then;
+
+  /// Create a copy of ProjectCategory
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -123,25 +90,25 @@ class __$$ProjectCategoryImplCopyWithImpl<$Res>
     Object? iconPath = freezed,
     Object? created = freezed,
   }) {
-    return _then(_$ProjectCategoryImpl(
+    return _then(_self.copyWith(
       id: freezed == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
       category: freezed == category
-          ? _value.category
+          ? _self.category
           : category // ignore: cast_nullable_to_non_nullable
               as String?,
       title: freezed == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
       iconPath: freezed == iconPath
-          ? _value.iconPath
+          ? _self.iconPath
           : iconPath // ignore: cast_nullable_to_non_nullable
               as String?,
       created: freezed == created
-          ? _value.created
+          ? _self.created
           : created // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
@@ -150,12 +117,11 @@ class __$$ProjectCategoryImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ProjectCategoryImpl implements _ProjectCategory {
-  const _$ProjectCategoryImpl(
+class _ProjectCategory implements ProjectCategory {
+  const _ProjectCategory(
       {this.id, this.category, this.title, this.iconPath, this.created});
-
-  factory _$ProjectCategoryImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ProjectCategoryImplFromJson(json);
+  factory _ProjectCategory.fromJson(Map<String, dynamic> json) =>
+      _$ProjectCategoryFromJson(json);
 
   @override
   final int? id;
@@ -168,16 +134,26 @@ class _$ProjectCategoryImpl implements _ProjectCategory {
   @override
   final String? created;
 
+  /// Create a copy of ProjectCategory
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ProjectCategory(id: $id, category: $category, title: $title, iconPath: $iconPath, created: $created)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ProjectCategoryCopyWith<_ProjectCategory> get copyWith =>
+      __$ProjectCategoryCopyWithImpl<_ProjectCategory>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ProjectCategoryToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ProjectCategoryImpl &&
+            other is _ProjectCategory &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.category, category) ||
                 other.category == category) &&
@@ -187,49 +163,75 @@ class _$ProjectCategoryImpl implements _ProjectCategory {
             (identical(other.created, created) || other.created == created));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, id, category, title, iconPath, created);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ProjectCategoryImplCopyWith<_$ProjectCategoryImpl> get copyWith =>
-      __$$ProjectCategoryImplCopyWithImpl<_$ProjectCategoryImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ProjectCategoryImplToJson(
-      this,
-    );
+  String toString() {
+    return 'ProjectCategory(id: $id, category: $category, title: $title, iconPath: $iconPath, created: $created)';
   }
 }
 
-abstract class _ProjectCategory implements ProjectCategory {
-  const factory _ProjectCategory(
-      {final int? id,
-      final String? category,
-      final String? title,
-      final String? iconPath,
-      final String? created}) = _$ProjectCategoryImpl;
-
-  factory _ProjectCategory.fromJson(Map<String, dynamic> json) =
-      _$ProjectCategoryImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$ProjectCategoryCopyWith<$Res>
+    implements $ProjectCategoryCopyWith<$Res> {
+  factory _$ProjectCategoryCopyWith(
+          _ProjectCategory value, $Res Function(_ProjectCategory) _then) =
+      __$ProjectCategoryCopyWithImpl;
   @override
-  int? get id;
-  @override
-  String? get category;
-  @override
-  String? get title;
-  @override
-  String? get iconPath;
-  @override
-  String? get created;
-  @override
-  @JsonKey(ignore: true)
-  _$$ProjectCategoryImplCopyWith<_$ProjectCategoryImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call(
+      {int? id,
+      String? category,
+      String? title,
+      String? iconPath,
+      String? created});
 }
+
+/// @nodoc
+class __$ProjectCategoryCopyWithImpl<$Res>
+    implements _$ProjectCategoryCopyWith<$Res> {
+  __$ProjectCategoryCopyWithImpl(this._self, this._then);
+
+  final _ProjectCategory _self;
+  final $Res Function(_ProjectCategory) _then;
+
+  /// Create a copy of ProjectCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = freezed,
+    Object? category = freezed,
+    Object? title = freezed,
+    Object? iconPath = freezed,
+    Object? created = freezed,
+  }) {
+    return _then(_ProjectCategory(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      category: freezed == category
+          ? _self.category
+          : category // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: freezed == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      iconPath: freezed == iconPath
+          ? _self.iconPath
+          : iconPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      created: freezed == created
+          ? _self.created
+          : created // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on

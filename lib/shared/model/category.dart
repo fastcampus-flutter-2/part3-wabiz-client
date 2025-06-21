@@ -5,7 +5,7 @@ part 'category.g.dart';
 part 'category.freezed.dart';
 
 @freezed
-class ProjectCategory with _$ProjectCategory {
+abstract class ProjectCategory with _$ProjectCategory {
   const factory ProjectCategory({
     int? id,
     String? category,

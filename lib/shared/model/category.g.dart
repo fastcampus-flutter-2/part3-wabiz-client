@@ -6,9 +6,8 @@ part of 'category.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ProjectCategoryImpl _$$ProjectCategoryImplFromJson(
-        Map<String, dynamic> json) =>
-    _$ProjectCategoryImpl(
+_ProjectCategory _$ProjectCategoryFromJson(Map<String, dynamic> json) =>
+    _ProjectCategory(
       id: (json['id'] as num?)?.toInt(),
       category: json['category'] as String?,
       title: json['title'] as String?,
@@ -16,8 +15,7 @@ _$ProjectCategoryImpl _$$ProjectCategoryImplFromJson(
       created: json['created'] as String?,
     );
 
-Map<String, dynamic> _$$ProjectCategoryImplToJson(
-        _$ProjectCategoryImpl instance) =>
+Map<String, dynamic> _$ProjectCategoryToJson(_ProjectCategory instance) =>
     <String, dynamic>{
       'id': instance.id,
       'category': instance.category,

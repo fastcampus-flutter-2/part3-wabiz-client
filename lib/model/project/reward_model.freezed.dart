@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,108 +10,63 @@ part of 'reward_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-RewardItemModel _$RewardItemModelFromJson(Map<String, dynamic> json) {
-  return _RewardItemModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$RewardItemModel {
-  int? get id => throw _privateConstructorUsedError;
-  int? get projectId => throw _privateConstructorUsedError;
-  String? get imageUrl => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  int? get price => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  List<int> get imageRaw => throw _privateConstructorUsedError;
+  int? get id;
+  int? get projectId;
+  String? get imageUrl;
+  String? get title;
+  int? get price;
+  String? get description;
+  List<int> get imageRaw;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $RewardItemModelCopyWith<RewardItemModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $RewardItemModelCopyWith<$Res> {
-  factory $RewardItemModelCopyWith(
-          RewardItemModel value, $Res Function(RewardItemModel) then) =
-      _$RewardItemModelCopyWithImpl<$Res, RewardItemModel>;
-  @useResult
-  $Res call(
-      {int? id,
-      int? projectId,
-      String? imageUrl,
-      String? title,
-      int? price,
-      String? description,
-      List<int> imageRaw});
-}
-
-/// @nodoc
-class _$RewardItemModelCopyWithImpl<$Res, $Val extends RewardItemModel>
-    implements $RewardItemModelCopyWith<$Res> {
-  _$RewardItemModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of RewardItemModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $RewardItemModelCopyWith<RewardItemModel> get copyWith =>
+      _$RewardItemModelCopyWithImpl<RewardItemModel>(
+          this as RewardItemModel, _$identity);
+
+  /// Serializes this RewardItemModel to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? id = freezed,
-    Object? projectId = freezed,
-    Object? imageUrl = freezed,
-    Object? title = freezed,
-    Object? price = freezed,
-    Object? description = freezed,
-    Object? imageRaw = null,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      projectId: freezed == projectId
-          ? _value.projectId
-          : projectId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      imageUrl: freezed == imageUrl
-          ? _value.imageUrl
-          : imageUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      price: freezed == price
-          ? _value.price
-          : price // ignore: cast_nullable_to_non_nullable
-              as int?,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      imageRaw: null == imageRaw
-          ? _value.imageRaw
-          : imageRaw // ignore: cast_nullable_to_non_nullable
-              as List<int>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is RewardItemModel &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.projectId, projectId) ||
+                other.projectId == projectId) &&
+            (identical(other.imageUrl, imageUrl) ||
+                other.imageUrl == imageUrl) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.price, price) || other.price == price) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            const DeepCollectionEquality().equals(other.imageRaw, imageRaw));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, projectId, imageUrl, title,
+      price, description, const DeepCollectionEquality().hash(imageRaw));
+
+  @override
+  String toString() {
+    return 'RewardItemModel(id: $id, projectId: $projectId, imageUrl: $imageUrl, title: $title, price: $price, description: $description, imageRaw: $imageRaw)';
   }
 }
 
 /// @nodoc
-abstract class _$$RewardItemModelImplCopyWith<$Res>
-    implements $RewardItemModelCopyWith<$Res> {
-  factory _$$RewardItemModelImplCopyWith(_$RewardItemModelImpl value,
-          $Res Function(_$RewardItemModelImpl) then) =
-      __$$RewardItemModelImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $RewardItemModelCopyWith<$Res> {
+  factory $RewardItemModelCopyWith(
+          RewardItemModel value, $Res Function(RewardItemModel) _then) =
+      _$RewardItemModelCopyWithImpl;
   @useResult
   $Res call(
       {int? id,
@@ -123,13 +79,15 @@ abstract class _$$RewardItemModelImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$RewardItemModelImplCopyWithImpl<$Res>
-    extends _$RewardItemModelCopyWithImpl<$Res, _$RewardItemModelImpl>
-    implements _$$RewardItemModelImplCopyWith<$Res> {
-  __$$RewardItemModelImplCopyWithImpl(
-      _$RewardItemModelImpl _value, $Res Function(_$RewardItemModelImpl) _then)
-      : super(_value, _then);
+class _$RewardItemModelCopyWithImpl<$Res>
+    implements $RewardItemModelCopyWith<$Res> {
+  _$RewardItemModelCopyWithImpl(this._self, this._then);
 
+  final RewardItemModel _self;
+  final $Res Function(RewardItemModel) _then;
+
+  /// Create a copy of RewardItemModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,33 +99,33 @@ class __$$RewardItemModelImplCopyWithImpl<$Res>
     Object? description = freezed,
     Object? imageRaw = null,
   }) {
-    return _then(_$RewardItemModelImpl(
+    return _then(_self.copyWith(
       id: freezed == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
       projectId: freezed == projectId
-          ? _value.projectId
+          ? _self.projectId
           : projectId // ignore: cast_nullable_to_non_nullable
               as int?,
       imageUrl: freezed == imageUrl
-          ? _value.imageUrl
+          ? _self.imageUrl
           : imageUrl // ignore: cast_nullable_to_non_nullable
               as String?,
       title: freezed == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
       price: freezed == price
-          ? _value.price
+          ? _self.price
           : price // ignore: cast_nullable_to_non_nullable
               as int?,
       description: freezed == description
-          ? _value.description
+          ? _self.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
       imageRaw: null == imageRaw
-          ? _value._imageRaw
+          ? _self.imageRaw
           : imageRaw // ignore: cast_nullable_to_non_nullable
               as List<int>,
     ));
@@ -176,8 +134,8 @@ class __$$RewardItemModelImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$RewardItemModelImpl implements _RewardItemModel {
-  const _$RewardItemModelImpl(
+class _RewardItemModel implements RewardItemModel {
+  const _RewardItemModel(
       {this.id,
       this.projectId,
       this.imageUrl,
@@ -186,9 +144,8 @@ class _$RewardItemModelImpl implements _RewardItemModel {
       this.description,
       final List<int> imageRaw = const []})
       : _imageRaw = imageRaw;
-
-  factory _$RewardItemModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$RewardItemModelImplFromJson(json);
+  factory _RewardItemModel.fromJson(Map<String, dynamic> json) =>
+      _$RewardItemModelFromJson(json);
 
   @override
   final int? id;
@@ -211,16 +168,26 @@ class _$RewardItemModelImpl implements _RewardItemModel {
     return EqualUnmodifiableListView(_imageRaw);
   }
 
+  /// Create a copy of RewardItemModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'RewardItemModel(id: $id, projectId: $projectId, imageUrl: $imageUrl, title: $title, price: $price, description: $description, imageRaw: $imageRaw)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$RewardItemModelCopyWith<_RewardItemModel> get copyWith =>
+      __$RewardItemModelCopyWithImpl<_RewardItemModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$RewardItemModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RewardItemModelImpl &&
+            other is _RewardItemModel &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.projectId, projectId) ||
                 other.projectId == projectId) &&
@@ -233,55 +200,87 @@ class _$RewardItemModelImpl implements _RewardItemModel {
             const DeepCollectionEquality().equals(other._imageRaw, _imageRaw));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, projectId, imageUrl, title,
       price, description, const DeepCollectionEquality().hash(_imageRaw));
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$RewardItemModelImplCopyWith<_$RewardItemModelImpl> get copyWith =>
-      __$$RewardItemModelImplCopyWithImpl<_$RewardItemModelImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$RewardItemModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'RewardItemModel(id: $id, projectId: $projectId, imageUrl: $imageUrl, title: $title, price: $price, description: $description, imageRaw: $imageRaw)';
   }
 }
 
-abstract class _RewardItemModel implements RewardItemModel {
-  const factory _RewardItemModel(
-      {final int? id,
-      final int? projectId,
-      final String? imageUrl,
-      final String? title,
-      final int? price,
-      final String? description,
-      final List<int> imageRaw}) = _$RewardItemModelImpl;
-
-  factory _RewardItemModel.fromJson(Map<String, dynamic> json) =
-      _$RewardItemModelImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$RewardItemModelCopyWith<$Res>
+    implements $RewardItemModelCopyWith<$Res> {
+  factory _$RewardItemModelCopyWith(
+          _RewardItemModel value, $Res Function(_RewardItemModel) _then) =
+      __$RewardItemModelCopyWithImpl;
   @override
-  int? get id;
-  @override
-  int? get projectId;
-  @override
-  String? get imageUrl;
-  @override
-  String? get title;
-  @override
-  int? get price;
-  @override
-  String? get description;
-  @override
-  List<int> get imageRaw;
-  @override
-  @JsonKey(ignore: true)
-  _$$RewardItemModelImplCopyWith<_$RewardItemModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call(
+      {int? id,
+      int? projectId,
+      String? imageUrl,
+      String? title,
+      int? price,
+      String? description,
+      List<int> imageRaw});
 }
+
+/// @nodoc
+class __$RewardItemModelCopyWithImpl<$Res>
+    implements _$RewardItemModelCopyWith<$Res> {
+  __$RewardItemModelCopyWithImpl(this._self, this._then);
+
+  final _RewardItemModel _self;
+  final $Res Function(_RewardItemModel) _then;
+
+  /// Create a copy of RewardItemModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = freezed,
+    Object? projectId = freezed,
+    Object? imageUrl = freezed,
+    Object? title = freezed,
+    Object? price = freezed,
+    Object? description = freezed,
+    Object? imageRaw = null,
+  }) {
+    return _then(_RewardItemModel(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      projectId: freezed == projectId
+          ? _self.projectId
+          : projectId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      imageUrl: freezed == imageUrl
+          ? _self.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: freezed == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      price: freezed == price
+          ? _self.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as int?,
+      description: freezed == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      imageRaw: null == imageRaw
+          ? _self._imageRaw
+          : imageRaw // ignore: cast_nullable_to_non_nullable
+              as List<int>,
+    ));
+  }
+}
+
+// dart format on

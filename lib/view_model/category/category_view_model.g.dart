@@ -21,6 +21,8 @@ final fetchTypeTabsProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef FetchTypeTabsRef = AutoDisposeFutureProviderRef<List<ProjectType>>;
 String _$fetchCategoryProjectsHash() =>
     r'1eb0ac266809e514c92428572d9ec975d6050eb4';
@@ -161,6 +163,8 @@ class FetchCategoryProjectsProvider
   }
 }
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 mixin FetchCategoryProjectsRef on AutoDisposeFutureProviderRef<CategoryModel> {
   /// The parameter `categoryId` of this provider.
   String get categoryId;
@@ -295,6 +299,8 @@ class FetchCategoryProjectsByTypeProvider
   }
 }
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 mixin FetchCategoryProjectsByTypeRef
     on AutoDisposeFutureProviderRef<CategoryModel> {
   /// The parameter `categoryId` of this provider.
@@ -328,4 +334,4 @@ final categoryViewModelProvider = AutoDisposeNotifierProvider<CategoryViewModel,
 
 typedef _$CategoryViewModel = AutoDisposeNotifier<CategoryScreenState>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

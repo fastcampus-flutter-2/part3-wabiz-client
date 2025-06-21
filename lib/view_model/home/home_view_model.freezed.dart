@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,79 +10,63 @@ part of 'home_view_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$HomeState {
-  List<HomeItemModel> get projects => throw _privateConstructorUsedError;
+  List<HomeItemModel> get projects;
 
-  @JsonKey(ignore: true)
-  $HomeStateCopyWith<HomeState> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $HomeStateCopyWith<$Res> {
-  factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) then) =
-      _$HomeStateCopyWithImpl<$Res, HomeState>;
-  @useResult
-  $Res call({List<HomeItemModel> projects});
-}
-
-/// @nodoc
-class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
-    implements $HomeStateCopyWith<$Res> {
-  _$HomeStateCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $HomeStateCopyWith<HomeState> get copyWith =>
+      _$HomeStateCopyWithImpl<HomeState>(this as HomeState, _$identity);
+
   @override
-  $Res call({
-    Object? projects = null,
-  }) {
-    return _then(_value.copyWith(
-      projects: null == projects
-          ? _value.projects
-          : projects // ignore: cast_nullable_to_non_nullable
-              as List<HomeItemModel>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is HomeState &&
+            const DeepCollectionEquality().equals(other.projects, projects));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(projects));
+
+  @override
+  String toString() {
+    return 'HomeState(projects: $projects)';
   }
 }
 
 /// @nodoc
-abstract class _$$HomeStateImplCopyWith<$Res>
-    implements $HomeStateCopyWith<$Res> {
-  factory _$$HomeStateImplCopyWith(
-          _$HomeStateImpl value, $Res Function(_$HomeStateImpl) then) =
-      __$$HomeStateImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $HomeStateCopyWith<$Res> {
+  factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) _then) =
+      _$HomeStateCopyWithImpl;
   @useResult
   $Res call({List<HomeItemModel> projects});
 }
 
 /// @nodoc
-class __$$HomeStateImplCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$HomeStateImpl>
-    implements _$$HomeStateImplCopyWith<$Res> {
-  __$$HomeStateImplCopyWithImpl(
-      _$HomeStateImpl _value, $Res Function(_$HomeStateImpl) _then)
-      : super(_value, _then);
+class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
+  _$HomeStateCopyWithImpl(this._self, this._then);
 
+  final HomeState _self;
+  final $Res Function(HomeState) _then;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? projects = null,
   }) {
-    return _then(_$HomeStateImpl(
+    return _then(_self.copyWith(
       projects: null == projects
-          ? _value._projects
+          ? _self.projects
           : projects // ignore: cast_nullable_to_non_nullable
               as List<HomeItemModel>,
     ));
@@ -90,8 +75,8 @@ class __$$HomeStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$HomeStateImpl implements _HomeState {
-  _$HomeStateImpl({final List<HomeItemModel> projects = const []})
+class _HomeState implements HomeState {
+  _HomeState({final List<HomeItemModel> projects = const []})
       : _projects = projects;
 
   final List<HomeItemModel> _projects;
@@ -103,16 +88,19 @@ class _$HomeStateImpl implements _HomeState {
     return EqualUnmodifiableListView(_projects);
   }
 
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'HomeState(projects: $projects)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$HomeStateCopyWith<_HomeState> get copyWith =>
+      __$HomeStateCopyWithImpl<_HomeState>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$HomeStateImpl &&
+            other is _HomeState &&
             const DeepCollectionEquality().equals(other._projects, _projects));
   }
 
@@ -120,20 +108,44 @@ class _$HomeStateImpl implements _HomeState {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_projects));
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'HomeState(projects: $projects)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$HomeStateCopyWith<$Res>
+    implements $HomeStateCopyWith<$Res> {
+  factory _$HomeStateCopyWith(
+          _HomeState value, $Res Function(_HomeState) _then) =
+      __$HomeStateCopyWithImpl;
+  @override
+  @useResult
+  $Res call({List<HomeItemModel> projects});
+}
+
+/// @nodoc
+class __$HomeStateCopyWithImpl<$Res> implements _$HomeStateCopyWith<$Res> {
+  __$HomeStateCopyWithImpl(this._self, this._then);
+
+  final _HomeState _self;
+  final $Res Function(_HomeState) _then;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>
-      __$$HomeStateImplCopyWithImpl<_$HomeStateImpl>(this, _$identity);
+  $Res call({
+    Object? projects = null,
+  }) {
+    return _then(_HomeState(
+      projects: null == projects
+          ? _self._projects
+          : projects // ignore: cast_nullable_to_non_nullable
+              as List<HomeItemModel>,
+    ));
+  }
 }
 
-abstract class _HomeState implements HomeState {
-  factory _HomeState({final List<HomeItemModel> projects}) = _$HomeStateImpl;
-
-  @override
-  List<HomeItemModel> get projects;
-  @override
-  @JsonKey(ignore: true)
-  _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

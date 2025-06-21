@@ -20,7 +20,7 @@ enum EnumCategoryProjectType {
 }
 
 @freezed
-class CategoryScreenState with _$CategoryScreenState {
+abstract class CategoryScreenState with _$CategoryScreenState {
   factory CategoryScreenState({
     ProjectType? selectedType,
     @Default(EnumCategoryProjectType.recommend)

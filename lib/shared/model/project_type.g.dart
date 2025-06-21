@@ -6,15 +6,14 @@ part of 'project_type.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ProjectTypeImpl _$$ProjectTypeImplFromJson(Map<String, dynamic> json) =>
-    _$ProjectTypeImpl(
+_ProjectType _$ProjectTypeFromJson(Map<String, dynamic> json) => _ProjectType(
       id: (json['id'] as num?)?.toInt(),
       type: json['type'] as String?,
       created: json['created'] as String?,
       imagePath: json['imagePath'] as String?,
     );
 
-Map<String, dynamic> _$$ProjectTypeImplToJson(_$ProjectTypeImpl instance) =>
+Map<String, dynamic> _$ProjectTypeToJson(_ProjectType instance) =>
     <String, dynamic>{
       'id': instance.id,
       'type': instance.type,

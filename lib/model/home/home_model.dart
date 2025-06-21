@@ -7,7 +7,7 @@ part 'home_model.g.dart';
 part 'home_model.freezed.dart';
 
 @freezed
-class HomeModel with _$HomeModel {
+abstract class HomeModel with _$HomeModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory HomeModel({
     String? status,
@@ -20,7 +20,7 @@ class HomeModel with _$HomeModel {
 }
 
 @freezed
-class HomeItemModel with _$HomeItemModel {
+abstract class HomeItemModel with _$HomeItemModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory HomeItemModel({
     int? id,

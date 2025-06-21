@@ -5,7 +5,7 @@ part 'reward_model.g.dart';
 part 'reward_model.freezed.dart';
 
 @freezed
-class RewardItemModel with _$RewardItemModel {
+abstract class RewardItemModel with _$RewardItemModel {
   const factory RewardItemModel({
     int? id,
     int? projectId,
